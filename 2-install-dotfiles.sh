@@ -2,7 +2,7 @@
 #set -e
 ##################################################################################################################
 # Author    : Erik Dubois
-# Edited    : c0deWanted
+# Editor    : c0deWanted
 # Website   : https://www.erikdubois.be
 # Website   : https://www.arcolinux.com
 # Website   : https://www.arcolinuxforum.com
@@ -23,7 +23,9 @@
 
 installed_dir=$(dirname $(readlink -f $(basename `pwd`)))
 
-################################################################################################################o #
+##################################################################################################################
+
+
 tput setaf 6
 echo "----------------------------------------------------"
 echo
@@ -36,46 +38,37 @@ echo "..IMV...:SM*....:MN.....:SN*..:SM*........:MM:"
 echo "..IMNVVSNS*.....:MN......*NNVVNM*...ISVVVSNS*."
 echo "..::::::.........::........:**:......:***::..."
 echo
-echo "Arch Linux required"
+echo "Choose theme:"
 echo
-echo "Qtile WM "
-echo "Arco Linux repos & software"
+echo "1. Raven night"
+echo "2. Polar day"
 echo
 echo "----------------------------------------------------"
 tput sgr0
 
-read -r -p "Proceed? [Y/n] :" input
+
+read -r -p "Choose [1/2] :" input
+
+
+cd $installed_dir/Personal
+
+sh 900-*
+sh 910-*
 
 case $input in
-      [yY][eE][sS]|[yY])
+      [1])
             tput setaf 6
-            echo "|» Boost pacman"
-            echo "|» Parallel downlods -> 10"
-
-            FIND="#ParallelDownloads = 5"
-            REPLACE="ParallelDownloads = 10"
-            sudo sed -i "s/$FIND/$REPLACE/g" /etc/pacman.conf
-
-            echo "|» Candy"
-
-            FINDCOLOR='#Color'
-            REPLACECOLOR='Color\nILoveCandy'
-            sudo sed -i "s/$FINDCOLOR/$REPLACECOLOR/g" /etc/pacman.conf
-
-            tput sgr0
-
-            sudo pacman -Sy
-
-            sh 100-install-arco*
-            sh 110-install-bluetooth*
-            sh 120-install-cups*
-            sh 130-install-core-software*
-            sh 140-install-qtile*
-
+            echo "|» Raven dark"
+            cp $HOME/.config/qtile/config.py.dark $HOME/.config/qtile/config.py
+            cp $HOME/Pictures/Background/017.jpg /usr/share/sddm/themes/arcolinux-simplicity/images/background.jpg
+            echo "feh --bg-fill /home/oh/Pictures/Backgrounds/017.jpg &" | sudo tee $HOME/.config/qtile/scripts/autostart.sh
             ;;
-      [nN][oO]|[nN])
+      [2])
             tput setaf 6
-            echo "|» Bye"
+            echo "|» Polar day"
+            cp $HOME/.config/qtile/config.py.light $HOME/.config/qtile/config.py
+            cp $HOME/Pictures/Background/010.jpg /usr/share/sddm/themes/arcolinux-simplicity/images/background.jpg
+            echo "feh --bg-fill /home/oh/Pictures/Backgrounds/007.jpg &" | sudo tee $HOME/.config/qtile/scripts/autostart.sh
             tput sgr0
             exit 0
             ;;
@@ -87,3 +80,13 @@ case $input in
             exit 1
             ;;
 esac
+
+###############################################################################################
+
+
+tput setaf 4
+echo "----------------------------------------------------"
+echo "     Done"
+echo "----------------------------------------------------"
+tput sgr0
+

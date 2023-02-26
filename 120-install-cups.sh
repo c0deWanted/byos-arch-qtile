@@ -48,6 +48,8 @@ sudo pacman -S --noconfirm --needed simple-scan
 
 sudo systemctl enable --now cups.service
 
+yay -S --noconfirm --needed cnijfilter-mg4200
+
 tput setaf 6
 echo "|» Done"
 tput sgr0
