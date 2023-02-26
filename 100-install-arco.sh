@@ -74,6 +74,7 @@ fi
 sudo pacman -S --noconfirm --needed arcolinux-hblock-git
 #sudo pacman -S --noconfirm --needed arcolinux-pamac-all
 sudo pacman -S --noconfirm --needed archlinux-tweak-tool-git
+sudo pacman -S --noconfirm --needed sardi-ghost-flexible-colora-variations-icons-git
 sudo pacman -S --noconfirm --needed surfn-plasma-dark-tela-icons-git
 sudo pacman -S --noconfirm --needed vimix-cursors
 

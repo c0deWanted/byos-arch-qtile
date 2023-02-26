@@ -54,12 +54,12 @@ func_install() {
 #Server = https://mirror.osbeck.com/archlinux/\$repo/os/\$arch
 #Server = http://mirror.osbeck.com/archlinux/\$repo/os/\$arch
 #Server = https://geo.mirror.pkgbuild.com/\$repo/os/\$arch" | sudo tee /etc/pacman.d/mirrorlist
-# echo
-# tput setaf 6
-# echo "|» Arch Linux Servers have been written to /etc/pacman.d/mirrorlist"
-# echo "|» Use nmirrorlist to inspect"
-# tput sgr0
-# echo
+echo
+tput setaf 6
+echo "|» Arch Linux Servers have been written to /etc/pacman.d/mirrorlist"
+echo "|» Use nmirrorlist to inspect"
+tput sgr0
+echo
 
 sudo pacman -Syy
 
