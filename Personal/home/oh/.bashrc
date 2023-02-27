@@ -34,7 +34,6 @@ bind "set completion-ignore-case on"
 ### ALIASES ###
 
 #my
-alias serverlogin='ssh oh@192.168.178.147'
 alias yask='xrandr --output DP-4 --gamma 0.9 --brightness 0.6'
 alias who='xprop | grep WM_CLASS'
 alias ems='/usr/bin/emacs --daemon &'
@@ -42,11 +41,13 @@ alias emc='emacsclient -c -a 'vim''
 alias showcpu='cat /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor'
 alias changecpu='sudo vim /etc/default/cpupower'
 alias enablecpu='sudo systemctl enable cpupower.service'
-alias sec='cd /mnt/sec/'
+alias sec='cd /mnt/second/'
+alias first='cd /mnt/first/'
 alias vpnua='sudo ./vpnua.sh'
 alias vpnno='sudo ./vpnno.sh'
 alias vpnde='sudo ./vpndef.sh'
 alias vpnus='sudo ./vpnus.sh'
+alias v6off='sudo sysctl -p'
 
 #Python
 alias p='python'

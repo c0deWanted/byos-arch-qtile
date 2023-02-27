@@ -48,15 +48,15 @@
 	<other-files/>
 	<text-files/>
 </action>
-<action>
-	<icon>catfish</icon>
-	<name>Search with catfish</name>
-	<unique-id>1489089852658523-2</unique-id>
-	<command>catfish --path=$f$d</command>
-	<description></description>
-	<patterns>*</patterns>
-	<directories/>
-</action>
+<!-- <action> -->
+<!-- 	<icon>catfish</icon> -->
+<!-- 	<name>Search with catfish</name> -->
+<!-- 	<unique-id>1489089852658523-2</unique-id> -->
+<!-- 	<command>catfish -\-path=$f$d</command> -->
+<!-- 	<description></description> -->
+<!-- 	<patterns>*</patterns> -->
+<!-- 	<directories/> -->
+<!-- </action> -->
 <action>
 	<icon>final-term</icon>
 	<name>Extract here</name>
@@ -143,27 +143,27 @@
 	<other-files/>
 	<text-files/>
 </action>
-<action>
-	<icon>conky-manager</icon>
-	<name>Conkyzen</name>
-	<unique-id>1510943357717982-3</unique-id>
-	<command>am-conkyzen</command>
-	<description>conkyzen</description>
-	<patterns>*</patterns>
-	<directories/>
-	<audio-files/>
-	<image-files/>
-	<other-files/>
-	<text-files/>
-	<video-files/>
-</action>
-<action>
-	<icon>gitahead</icon>
-	<name>Open with gitahead</name>
-	<unique-id>1587287434852027-1</unique-id>
-	<command>gitahead %F</command>
-	<description>Open with gitahead</description>
-	<patterns>*</patterns>
-	<directories/>
-</action>
+<!-- <action> -->
+<!-- 	<icon>conky-manager</icon> -->
+<!-- 	<name>Conkyzen</name> -->
+<!-- 	<unique-id>1510943357717982-3</unique-id> -->
+<!-- 	<command>am-conkyzen</command> -->
+<!-- 	<description>conkyzen</description> -->
+<!-- 	<patterns>*</patterns> -->
+<!-- 	<directories/> -->
+<!-- 	<audio-files/> -->
+<!-- 	<image-files/> -->
+<!-- 	<other-files/> -->
+<!-- 	<text-files/> -->
+<!-- 	<video-files/> -->
+<!-- </action> -->
+<!-- <action> -->
+<!-- 	<icon>gitahead</icon> -->
+<!-- 	<name>Open with gitahead</name> -->
+<!-- 	<unique-id>1587287434852027-1</unique-id> -->
+<!-- 	<command>gitahead %F</command> -->
+<!-- 	<description>Open with gitahead</description> -->
+<!-- 	<patterns>*</patterns> -->
+<!-- 	<directories/> -->
+<!-- </action> -->
 </actions>

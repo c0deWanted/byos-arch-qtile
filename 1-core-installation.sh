@@ -27,9 +27,19 @@ installed_dir=$(dirname $(readlink -f $(basename `pwd`)))
 tput setaf 6
 echo "----------------------------------------------------"
 echo
-echo "      * install core system"
-echo "      * install bluetooth"
-echo "      * install cups (printer)"
+echo "............................::..........::...."
+echo ".*NMNSSNSI..*MS:....:NN:.:SNSSNS*...:VNNSSSS:."
+echo "..IMV...SM*..INS*..INS*.:SN*..:SM*..VMI......."
+echo "..IMSIIVNV:...:NN*IM$:..*N$:...VMI..*NMVI**..."
+echo "..IMS**ISNI:...:IMN*:...*N$:...VMI....:*IVNNI."
+echo "..IMV...:SM*....:MN.....:SN*..:SM*........:MM:"
+echo "..IMNVVSNS*.....:MN......*NNVVNM*...ISVVVSNS*."
+echo "..::::::.........::........:**:......:***::..."
+echo
+echo "Arch Linux required"
+echo
+echo "Qtile WM "
+echo "Arco Linux repos & software"
 echo
 echo "----------------------------------------------------"
 tput sgr0
