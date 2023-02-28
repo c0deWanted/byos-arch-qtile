@@ -43,9 +43,9 @@ super + z
 super + p
     pamac-manager
 
-# #xfce4-settings
-# super + s
-#     xfce4-settings-manager
+#archlinux-tweak-tool
+super + a
+    archlinux-tweak-tool
 
 #Htop
 super + d
@@ -54,14 +54,6 @@ super + d
 #Gtop
 super + g
      alacritty -e gtop
-
-# #Conky-toggle
-# super + c
-#     conky-toggle
-
-# #killall conky
-# super + ctrl + c
-#     killall conky
 
 #archlinux-logout
 super + x
@@ -107,10 +99,6 @@ ctrl + alt + g
 #arcolinux-welcome-app
 ctrl + alt + w
      libreoffice
-
-#archlinux-tweak-tool
-ctrl + alt + e
-    archlinux-tweak-tool
 
 #conky-rotate
 #ctrl + alt + Next

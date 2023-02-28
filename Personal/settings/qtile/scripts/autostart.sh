@@ -8,7 +8,6 @@ picom --config $HOME/.config/qtile/scripts/picom.conf &
 
 #The following will set you screen resolution to full HD at qtile start
 #Find out your monitor name with xrandr or arandr and replace it.
-#There are a few examples btw
 #xrandr -s 1920x1080
 # vbox vm
 #xrandr --output Virtual-1 --primary --mode 2560x1440 --rate 60.00 &
@@ -21,7 +20,7 @@ picom --config $HOME/.config/qtile/scripts/picom.conf &
 #xrandr --output DP-4 --gamma 0.9 --brightness 0.6
 #
 #Set your wallpaper
-#feh
+feh --bg-fill $HOME/Pictures/Backgrounds/017.jpg &
 #
 volumeicon &
 sxhkd &
