@@ -32,10 +32,8 @@ installed_dir=$(dirname $(readlink -f $(basename `pwd`)))
 ##################################################################################################################
 
 echo
-tput setaf 2
-echo "################################################################"
-echo "################### Display manager"
-echo "################################################################"
+tput setaf 6
+echo "|» Display manager"
 tput sgr0
 echo
 
@@ -44,10 +42,8 @@ echo
 if grep -q "archlinux" /etc/os-release; then
 
 	echo
-	tput setaf 2
-	echo "################################################################"
-	echo "################### We are on ARCH LINUX"
-	echo "################################################################"
+	tput setaf 6
+	echo "|» We are on ARCH LINUX"
 	tput sgr0
 	echo
 
@@ -65,6 +61,7 @@ if grep -q "archlinux" /etc/os-release; then
 	FIND="Current=breeze"
 	REPLACE="Current=arcolinux-simplicity"
 	sudo sed -i "s/$FIND/$REPLACE/g" /etc/sddm.conf
+	sudo cp -f $installed_dir/home/oh/Pictures/Backgrounds/017.jpg /usr/share/sddm/themes/arcolinux-simplicity/images/background.jpg
 
 	if [ -f /etc/lightdm/lightdm.conf ]; then
 
@@ -104,9 +101,7 @@ if grep -q "archlinux" /etc/os-release; then
 
 	echo
 	tput setaf 6
-	echo "################################################################"
-	echo "################### Done"
-	echo "################################################################"
+	echo "|» Done"
 	tput sgr0
 	echo
 

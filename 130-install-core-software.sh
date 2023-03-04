@@ -225,6 +225,11 @@ sudo systemctl enable cpupower.service
 sudo systemctl enable sddm.service
 sudo systemctl enable NetworkManager.service
 
+
+echo
+tput setaf 6
+echo "|» Install the driver for Canon MG4200 series printer"
+tput sgr0
 yay -S --noconfirm --needed cnijfilter-mg4200
 
 if [ ! -f /usr/bin/duf ]; then

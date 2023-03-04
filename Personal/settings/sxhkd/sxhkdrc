@@ -47,14 +47,6 @@ super + p
 super + a
     archlinux-tweak-tool
 
-#Htop
-super + d
-     alacritty -e htop
-
-#Gtop
-super + g
-     alacritty -e gtop
-
 #archlinux-logout
 super + x
     archlinux-logout
@@ -91,6 +83,14 @@ super + shift + s
 #################################################################
 # CONTROL + ALT KEYS
 #################################################################
+
+#Htop
+ctrl + alt + h
+     alacritty -e htop
+
+#Gtop
+ctrl +alt + g
+     alacritty -e gtop
 
 #Gimp
 ctrl + alt + g
@@ -238,7 +238,7 @@ super + Print
 
 #Scrot
 Print
-    scrot 'raven-byos-%Y-%m-%d-%s_screenshot_$wx$h.jpg' -e 'mv $f $$(xdg-user-dir PICTURES)'
+    scrot 'byos-%Y-%m-%d-%s_screenshot_$wx$h.jpg' -e 'mv $f $$(xdg-user-dir PICTURES)'
 
 #screenrecorder
 ctrl + Print
