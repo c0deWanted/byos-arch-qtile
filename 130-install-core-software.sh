@@ -96,6 +96,7 @@ downgrade
 evince
 expac
 exa
+faad2
 fd
 feh
 file-roller
@@ -121,7 +122,9 @@ hw-probe
 #intellij-idea-community-edition
 inxi
 kvantum
+libmad
 libreoffice-fresh
+libzip
 linux-firmware-qlogic
 lshw
 man-db
@@ -209,6 +212,7 @@ p7zip
 unace
 unrar
 unzip
+wavpack
 )
 
 count=0
