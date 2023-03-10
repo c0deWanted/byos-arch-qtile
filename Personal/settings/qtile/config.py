@@ -312,10 +312,10 @@ screens = [
                 #     padding = 15,
                 #     format = 'G {temp}°C'
                 # ),
-                # widget.Systray(
-                #     padding = 10,
-                #     background = colors[0],
-                # ),
+                widget.Systray(
+                    padding = 10,
+                    background = colors[0],
+                ),
                 widget.Sep(
                     linewidth = 0,
                     padding = 20,
@@ -356,8 +356,8 @@ screens = [
                     mouse_callbacks = {'Button1': lambda: qtile.cmd_spawn('archlinux-logout')},
                 ),
             ],
-            size = 24,
-            opacity = 0.8
+            size = 20,
+            opacity = 0.5
         ),
     ),
 # Secondary screen
